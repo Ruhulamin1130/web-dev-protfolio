@@ -16,6 +16,9 @@
     padding: 30px 50px;
     color: white;
 }
+.text-center {
+    text-align: center;
+}
 .dark-1 {
     color: #181818;
 }
@@ -34,6 +37,9 @@
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
+
+
+
 nav {
     display: flex;
     align-items: center;
@@ -103,11 +109,15 @@ main {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+main section {
+    margin: 130px 130px;
+}
 .aboutt {
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 /* about items */
 .about-items {
@@ -116,4 +126,15 @@ main {
 }
 .item-discription {
     font-weight: 600;
+}
+/* skills items here */
+
+.skills-continer {
+ display: flex;
+ gap: 25px;
+}
+.skill {
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.6) ;
 }
