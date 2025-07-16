@@ -89,8 +89,8 @@ nav li a {
 .banner-content {
     max-width: 580px;
 }
-img {
-    /* max-width: 580px; */
+.img {
+    width: 580px;
 }
 .banner-grate {
     font-size: 45px;
@@ -172,9 +172,60 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     height: 64px;
     width: 100%;
     border-radius: 5px;
+
     background-color: white;
     padding: 10px 20px;
     margin-bottom: 20px;
+    border: none;
+
+
+}
+.none {
+    display: none;
+}
+/* Responsive style start here for mobile phone */
+
+@media screen and (max-width: 576px) {
+.skills-continer, 
+.resume-container, .banner, nav, nav>ul,
+.about-items,
+footer{
+    flex-direction: column;
+}
+nav ul {
+    gap: 15px;
+}
+
+.header {
+    background-image: none;
+}
+.img {
+    width: 100%;
+}
+
+.btn-primary {
+    margin-bottom: 20px;
+}
+main section {
+    margin: 0px;
+}
+.banner, nav {
+    margin: 20px;
+}
+footer, .aboutt, nav > ul {
+    padding: 20px;
+}
+.futer-collam {
+    width: 100%;
+}
+
+footer input[type="text"], footer input[type="email"], footer textarea{
+
+
+    width: calc(100% - 40px);
+}
+
+
 
 
 }
